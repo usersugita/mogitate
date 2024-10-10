@@ -17,7 +17,12 @@
                 </div>
                 <div class="register__name-text">
                     <input class="name-input" type="text" name="name" placeholder="商品名を入力">
-
+                    <ul>
+                        <li>@if ($errors->has('name'))
+                            {{$errors->first('name')}}
+                            @endif
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="register__price">
@@ -26,6 +31,12 @@
                 </div>
                 <div class="register__price-text">
                     <input class="price-input" type="text" name="price" placeholder="季節を入力">
+                    <ul>
+                        <li>@if ($errors->has('price'))
+                            {{$errors->first('price')}}
+                            @endif
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="register__image">
@@ -34,6 +45,12 @@
                 </div>
                 <div class="register__image-file">
                     <input class="image-input" id="image" type="file" name="image" accept="src/public/storage/*">
+                    <ul>
+                        <li>@if ($errors->has('image'))
+                            {{$errors->first('image')}}
+                            @endif
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="register__season">
@@ -47,6 +64,12 @@
                     <label for="b"><input type="checkbox" name="season" id="b" value="season"> 夏</label>
                     <label for="c"><input type="checkbox" name="season" id="c" value="season"> 秋</label>
                     <label for="d"><input type="checkbox" name="season" id="d" value="season"> 冬</label>
+                    <ul>
+                        <li>@if ($errors->has('season'))
+                            {{$errors->first('season')}}
+                            @endif
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="register__description">
@@ -55,6 +78,12 @@
                 </div>
                 <div class="register__description-text">
                     <textarea class="register__description-textarea" name="description" id="" rows="5" placeholder="商品の説明を入力"></textarea>
+                    <ul>
+                        <li>@if ($errors->has('description'))
+                            {{$errors->first('description')}}
+                            @endif
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="register__btn">

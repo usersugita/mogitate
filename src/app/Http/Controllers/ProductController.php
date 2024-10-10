@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ProductRequest;
+
+use App\Http\Requests\RegisterRequest;
 use App\Models\Product;
 use App\Models\season;
 use App\Models\Product_season;
@@ -73,7 +75,7 @@ class ProductController extends Controller
     {
         return view('register');
     }
-    public function create(Request $request)
+    public function create(RegisterRequest $request)
     {
         $products = [
             'name' => $request->name,

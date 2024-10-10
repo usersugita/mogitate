@@ -11,16 +11,23 @@ span{
 background: red;
 color: white;
 }
+.register__price-logo,
+.register__image-logo,
+.register__season-logo,
+.register__description-logo
+{
+margin-top: 30px;
+}
 .name-input,.price-input
 {
-    margin: 10px 0 30px 0;
+    margin-top: 10px;
         height: 40px;
         width: 100%;
         border: 1px solid rgb(189, 186, 186);
 border-radius: 3px;
 }
 .image-input{
-margin: 10px 0 30px 0;
+margin-top: 10px;
 }
 .register__season-logo {
     display: flex;
@@ -32,13 +39,13 @@ font-size: smaller;
 }
 
 .register__season-select{
-margin: 10px 0 30px 0;
+margin-top: 10px;
 }
 .register__season-select label{
 margin-right: 30px;
 }
 .register__description-textarea{
-    margin: 10px 0 30px 0;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -64,4 +71,9 @@ margin-right: 30px;
     cursor: pointer;
     font-size: 15px;
     border-radius: 5px;
+}
+li {
+    padding-left: 0;
+    list-style: none;
+    color: red;
 }
