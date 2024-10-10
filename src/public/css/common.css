@@ -1,0 +1,12 @@
+.haeder_logo {
+    color: rgb(233, 188, 8);
+    padding: 0 20px;
+    font-size: 30px;
+    font-family: serif;
+}
+
+.main {
+    
+    z-index: 0;
+background: rgba(248, 248, 248, 1);
+}
