@@ -1,6 +1,6 @@
 # mogitate
 ## 環境構築  
-1.git clone 
+1.git clone git@github.com:usersugita/mogitate.git
 
 2.DockerDesktopアプリを立ち上げる
 
